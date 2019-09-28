@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `boxes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `boxes` (
-  `CerealID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(20) NOT NULL,
   `Flavor` varchar(35) NOT NULL,
-  PRIMARY KEY (`CerealID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `boxes` (
 
 LOCK TABLES `boxes` WRITE;
 /*!40000 ALTER TABLE `boxes` DISABLE KEYS */;
-INSERT INTO `boxes` VALUES (2,'Lucky Charms','Marshmallow'),(3,'Special K','Yogurt'),(4,'Fruity Pebbles','Fruit'),(5,'Cocoa Pebbles','Chocolate'),(6,'Cheerios','Honey');
+INSERT INTO `boxes` VALUES (2,'Lucky Charms','Marshmallow'),(3,'Special K','Yogurt'),(5,'Cocoa Pebbles','Chocolate'),(7,'Fruity Pebbles','Fruit'),(9,'Rice Crispies','Rice'),(13,'Cheerios','Berry');
 /*!40000 ALTER TABLE `boxes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-26 12:27:24
+-- Dump completed on 2019-09-28 16:12:10
